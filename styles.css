@@ -1,0 +1,137 @@
+/* https://www.josephz.me/
+https://www.melaniedaveid.com/
+https://jonlamb.com/?ref=onepagelove
+
+also consider changing line-height property
+change images to webp for efficiency
+*/
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: white;
+    color: black;
+    font-family: "Raleway", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+::selection {
+    background: #3d1818;
+    color: #fde047;
+}
+
+
+.navBar {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 4;
+    background-color: #161001;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    flex-grow: 1;
+    flex-wrap: wrap;
+    border-bottom: 0.1rem solid #dec430;
+    padding: 1rem 0 1rem;
+}
+
+.navBar a {
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+    font-size: clamp(1rem, 0.8077rem + 0.7692vw, 1.5rem);
+    font-weight: bold;
+}
+
+
+
+
+
+.expContainer {
+    display: flex;
+
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.expContainer h1 {
+    margin: 0;
+    padding: 0.5em;
+    font-size: clamp(2rem, 1.6154rem + 1.5385vw, 3rem);
+}
+
+
+
+.lColumn {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    column-gap: 10rem;
+    padding: 0;
+    margin: 0;
+}
+
+.gridItm {
+    padding-bottom: 0.3rem;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+    transition: 0.2s ease-out;
+}
+
+.gridItm:hover {
+    background-color: #de303f;
+    transition: 0.4s ease-out;
+}
+
+.gridItm h1 {
+    margin: 0;
+    padding: 0;
+    font-size: 2.25rem;
+}
+
+.gridItm p {
+    margin: 0;
+    font-size: 1.25rem;
+}
+
+
+
+
+
+
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #222529;
+    color: white;
+}
+
+footer * {
+    margin: 0;
+}
+
+footer h1 {
+    padding: 0.2em;
+}
+
+footer p {
+    padding: 0.3em 0 1em 0;
+}
+
+footer a {
+    text-decoration: underline;
+    color: white;
+    text-decoration: none;
+}
