@@ -11,7 +11,7 @@ html {
 }
 
 body {
-    background-color: white;
+    background-color: #161001;
     color: black;
     font-family: "Raleway", sans-serif;
     margin: 0;
@@ -24,36 +24,12 @@ body {
 }
 
 
-.navBar {
-    position: sticky;
-    top: 0;
-    width: 100%;
-    z-index: 4;
-    background-color: #161001;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-around;
-    flex-grow: 1;
-    flex-wrap: wrap;
-    border-bottom: 0.1rem solid #dec430;
-    padding: 1rem 0 1rem;
-}
-
-.navBar a {
-    color: white;
-    text-decoration: none;
-    cursor: pointer;
-    font-size: clamp(1rem, 0.8077rem + 0.7692vw, 1.5rem);
-    font-weight: bold;
-}
-
-
 
 
 
 .expContainer {
     display: flex;
+    align-self: center;
 
     flex-direction: column;
     justify-content: center;
@@ -62,6 +38,7 @@ body {
 }
 
 .expContainer h1 {
+    color: white;
     margin: 0;
     padding: 0.5em;
     font-size: clamp(2rem, 1.6154rem + 1.5385vw, 3rem);
@@ -69,7 +46,7 @@ body {
 
 
 
-.lColumn {
+.itmContainer {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
@@ -80,10 +57,16 @@ body {
 }
 
 .gridItm {
+    background-color: #161001;
     padding-bottom: 0.3rem;
     text-align: center;
     text-decoration: none;
-    color: black;
+    color: white;
+    
+    padding: 1.5em;
+    border: solid 0.2em #dec430;
+    border-radius: 0.4em;
+
     transition: 0.2s ease-out;
 }
 
@@ -109,6 +92,9 @@ body {
 
 
 footer {
+    position: fixed;
+    width: 100%;
+    bottom: 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
