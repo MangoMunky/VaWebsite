@@ -25,6 +25,7 @@ body {
 
 
 .navBar {
+    /*
     position: sticky;
     top: 0;
     width: 100%;
@@ -37,7 +38,13 @@ body {
     flex-grow: 1;
     flex-wrap: wrap;
     border-bottom: 0.1rem solid #dec430;
-    padding: 1rem 0 1rem;
+    padding: 1rem;
+    */
+    width: 100%;
+    display: grid;
+    background-color: #161001;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    place-items: center;
 }
 
 .navBar a {
