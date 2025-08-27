@@ -11,12 +11,16 @@ html {
 }
 
 body {
-    background-color: #161001;
+    display: flex;
+    flex-direction: column;
+    background-color: #5b828d;
     color: black;
     font-family: "Raleway", sans-serif;
     margin: 0;
     padding: 0;
+    min-height: 100vh;
 }
+
 
 ::selection {
     background: #3d1818;
@@ -29,8 +33,9 @@ body {
 
 .expContainer {
     display: flex;
+    flex: 1;
     align-self: center;
-
+    height: 100%;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -38,20 +43,48 @@ body {
 }
 
 .expContainer h1 {
-    color: white;
+    color: #b8e2f3;
     margin: 0;
     padding: 0.5em;
-    font-size: clamp(2rem, 1.6154rem + 1.5385vw, 3rem);
+    font-size: clamp(3rem, -1rem + 17.7778vw, 9rem);
+    text-align: center;
+}
+
+.expContainer p{
+    font-size: clamp(1rem, 0.6667rem + 1.4815vw, 1.5rem);
+    color: white;
+    text-align: center;
+    padding: 4em;
+}
+
+.title{
+    display: flex;
+    gap: 1em;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 2em;
+}
+
+.title h1{
+    text-align: center;
+    padding: 0;
+}
+
+.title img{
+    height: clamp(7rem, 0.3333rem + 29.6296vw, 17rem);
+    border-radius: 50%;
+    aspect-ratio: 1;
 }
 
 
-
 .itmContainer {
+    /*make them all the same size*/
     display: flex;
+    
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: center;
-    column-gap: 10rem;
+
     padding: 0;
     margin: 0;
 }
@@ -62,16 +95,19 @@ body {
     text-align: center;
     text-decoration: none;
     color: white;
-    
-    padding: 1.5em;
-    border: solid 0.2em #dec430;
-    border-radius: 0.4em;
+    width: 11em;
+
+    padding: 1em;
+    margin: 1em;
+    border: solid 0.1em #adaa96;
+    border-radius: 0.8em;
 
     transition: 0.2s ease-out;
 }
 
 .gridItm:hover {
-    background-color: #de303f;
+    background-color: #979f3c;
+    border: solid 0.1em #dec430;
     transition: 0.4s ease-out;
 }
 
@@ -79,6 +115,7 @@ body {
     margin: 0;
     padding: 0;
     font-size: 2.25rem;
+    font-weight: 10;
 }
 
 .gridItm p {
@@ -86,22 +123,17 @@ body {
     font-size: 1.25rem;
 }
 
-
-
-
-
-
 footer {
-    position: fixed;
     width: 100%;
-    bottom: 0;
+
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    place-items: center;
     text-align: center;
-    background-color: #222529;
+    background-color: #979f3c;
     color: white;
+    margin-top: 2em;
+    align-self: flex-end;
 }
 
 footer * {
