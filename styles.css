@@ -27,35 +27,64 @@ body {
     color: #fde047;
 }
 
+.video{
+    margin: 1em 0 1em 0;
+    width: clamp(21.2rem, 3.2211rem + 82.1895vw, 70rem);
+    height: auto;
+    aspect-ratio: 16 / 9;
+}
 
+.rBtn {
+    align-self: center;
+    background-color: #5b828d;
+    padding-bottom: 0.3rem;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    width: 11em;
 
+    padding: 1em;
+    margin: 1em;
+    border: solid 0.14em #adaa96;
+    border-radius: 0.8em;
+
+    transition: 0.2s ease-out;
+}
+
+.rBtn:hover {
+    background-color: #979f3c;
+    border: solid 0.1em #dec430;
+    transition: 0.4s ease-out;
+}
 
 
 .expContainer {
     display: flex;
-    flex: 1;
+    flex-grow: 1;
     align-self: center;
-    height: 100%;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     width: 100%;
 }
 
-.expContainer h1 {
+
+.expContainer h1{
     color: #b8e2f3;
     margin: 0;
     padding: 0.5em;
-    font-size: clamp(3rem, -1rem + 17.7778vw, 9rem);
+    font-size: clamp(4.65rem, 1.8818rem + 12.6545vw, 9rem);
     text-align: center;
+    padding: 0;
 }
 
 .expContainer p{
     font-size: clamp(1rem, 0.6667rem + 1.4815vw, 1.5rem);
     color: white;
     text-align: center;
-    padding: 4em;
+    padding: 0 clamp(1em, -0.9091em + 8.7273vw, 4em) 0 clamp(1em, -0.9091em + 8.7273vw, 4em);
 }
+
 
 .title{
     display: flex;
@@ -65,13 +94,18 @@ body {
     margin-bottom: 2em;
 }
 
-.title h1{
+.title h1 {
+    color: #b8e2f3;
+    margin: 0;
+    padding: 0.5em;
+    font-size: clamp(4.65rem, 1.8818rem + 12.6545vw, 9rem);
     text-align: center;
     padding: 0;
 }
 
 .title img{
-    height: clamp(7rem, 0.3333rem + 29.6296vw, 17rem);
+    margin: 0.5em;
+    height: clamp(13rem, 10.4545rem + 11.6364vw, 17rem);
     border-radius: 50%;
     aspect-ratio: 1;
 }
@@ -94,7 +128,7 @@ body {
     padding-bottom: 0.3rem;
     text-align: center;
     text-decoration: none;
-    color: white;
+    color: #b8e2f3;
     width: 11em;
 
     padding: 1em;
@@ -114,14 +148,11 @@ body {
 .gridItm h1 {
     margin: 0;
     padding: 0;
-    font-size: 2.25rem;
+    font-size: clamp(1.8rem, 1.5136rem + 1.3091vw, 2.25rem);
     font-weight: 10;
 }
 
-.gridItm p {
-    margin: 0;
-    font-size: 1.25rem;
-}
+
 
 footer {
     width: 100%;
@@ -132,7 +163,6 @@ footer {
     text-align: center;
     background-color: #979f3c;
     color: white;
-    margin-top: 2em;
     align-self: flex-end;
 }
 
