@@ -42,7 +42,7 @@ body {
     text-decoration: none;
     color: white;
     width: 11em;
-
+    border: solid 0.14em #dec430;
     padding: 1em;
     margin: 1em;
     border: solid 0.14 em #adaa96;
@@ -52,8 +52,8 @@ body {
 }
 
 .rBtn:hover {
+    border: solid 0.1em white;
     background-color: #979f3c;
-    border: solid 0.1em #dec430;
     transition: 0.4s ease-out;
 }
 
