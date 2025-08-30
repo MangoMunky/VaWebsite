@@ -22,6 +22,7 @@ body {
 }
 
 
+
 ::selection {
     background: #3d1818;
     color: #fde047;
@@ -54,6 +55,7 @@ body {
 .rBtn:hover {
     border: solid 0.1em white;
     background-color: #979f3c;
+    scale: 102.5%;
     transition: 0.4s ease-out;
 }
 
@@ -66,6 +68,18 @@ body {
     justify-content: center;
     align-items: center;
     width: 100%;
+    animation: navLoad 350ms ease-in-out;
+}
+
+@keyframes navLoad{
+    0%{
+        opacity: 0;
+        scale: 99.5%;
+    }
+    100%{
+        opacity: 100%;
+        scale: 100%;
+    }
 }
 
 
@@ -142,6 +156,7 @@ body {
 .gridItm:hover {
     background-color: #979f3c;
     border: solid 0.1em #dec430;
+    scale: 102.5%;
     transition: 0.4s ease-out;
 }
 
