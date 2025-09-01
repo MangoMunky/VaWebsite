@@ -1,7 +1,7 @@
 function darkMode() {
     var bodyElement = document.body;
     var button = document.getElementById("darkMode");
-    var emojiSpan = button.querySelector(".emoji-icon");
+    var emojiSpan = button.querySelector(".emojiMoon");
 
     bodyElement.classList.toggle("darkMode");
     emojiSpan.classList.add("hidden");
