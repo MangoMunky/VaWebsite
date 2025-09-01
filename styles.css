@@ -14,7 +14,7 @@ body {
     display: flex;
     flex-direction: column;
     background-color: #5b828d;
-    color: black;
+    color: white;
     font-family: "Raleway", sans-serif;
     margin: 0;
     padding: 0;
@@ -22,11 +22,32 @@ body {
 }
 
 
+body.darkMode {
+  background-color: #16191b;
+  color: white;
+}
 
 ::selection {
     background: #3d1818;
     color: #fde047;
 }
+
+#darkMode{
+    background-color: transparent;
+    border: none;
+    font-size: 5rem;
+}
+
+.emoji-icon {
+    transition: opacity 0.2s ease, transform 0.2s ease;
+    display: inline-block;
+}
+
+.emoji-icon.hidden {
+    opacity: 0;
+    transform: scale(0.9);
+}
+
 
 .video{
     margin: 1em 0 1em 0;
